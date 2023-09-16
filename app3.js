@@ -12,7 +12,7 @@ function exercicio1(){
         console.log(i)
         i++
         if( i <= numero){
-            setTimeout(function() {show(i);}, 1000)
+            setTimeout( () => {show(i);}, 1000)
         }
     }
     show(i)
@@ -104,4 +104,31 @@ function exercicio5(){
     }
 }
 }
-exercicio3()
+exercicio1()
+/*escreva um programa que faça o seguinte Exercício: Verificador de números primos em uma faixa
+Descrição:
+
+Escreva um programa que faça o seguinte:
+
+Pergunte ao usuário dois números: inicio e fim.
+Verifique e exiba todos os números primos entre inicio e fim (inclusive).
+Regras adicionais:
+
+Se inicio for maior que fim, exiba uma mensagem informando que o intervalo é inválido.
+Se inicio ou fim for menor que 2, ajuste para 2, pois 2 é o menor número primo.
+Dicas:
+
+Um número primo é um número maior que 1 e não pode ser formado pela multiplicação de outros dois números naturais menores.
+*/
+
+function exercicioPrimo(){
+    inicio = parseInt(prompt("Coloque o primeiro número"))
+    if (inicio < 2){
+        inicio = 2
+    }
+    fim = parseInt(prompt("Coloque o segundo número"))
+    while(fim <= inicio){
+        fim = parseInt(prompt("Coloque o segundo número"))
+    }
+    
+}
