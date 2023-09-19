@@ -104,7 +104,7 @@ function exercicio5(){
     }
 }
 }
-exercicio1()
+
 /*escreva um programa que faça o seguinte Exercício: Verificador de números primos em uma faixa
 Descrição:
 
@@ -131,4 +131,23 @@ function exercicioPrimo(){
         fim = parseInt(prompt("Coloque o segundo número"))
     }
     
+    for (let i = inicio; i <= fim; i++){
+        a = primo(i)
+        if (a){
+            console.log(`${i} é primo maluco`)
+        }
+    }
+
+    function primo(numero){
+
+        raiz = Math.sqrt(numero);
+        for (let j = 2; j <= raiz; j++){
+            if (numero % j === 0){
+                return false;
+            }
+        }
+        return true;
+    }
 }
+exercicioPrimo()
+
