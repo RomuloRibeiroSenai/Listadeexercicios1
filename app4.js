@@ -206,7 +206,7 @@ function exercicio5(){
                     let numero_base = 1000
                     let indice_menor;
                     while(lista_temp.length > 0){
-                    for(j = 0; j < lista_temp.length; j++){
+                    for(let j = 0; j < lista_temp.length; j++){
                         // procura o menor numero tira da lista, coloca em outra 
                         if(lista_temp[j][1] < numero_base){
                             numero_base = lista_temp[j][1];
@@ -216,6 +216,7 @@ function exercicio5(){
                     lista_inteira += lista_temp[indice_menor] + "\n"
                     lista_temp.splice(indice_menor,1)
                     indice_menor = 0
+                    numero_base = 1000
                 }
             
                     return lista_inteira
